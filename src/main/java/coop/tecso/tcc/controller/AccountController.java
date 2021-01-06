@@ -17,9 +17,9 @@ import coop.tecso.tcc.model.Account;
 import coop.tecso.tcc.service.AccountService;
 import coop.tecso.tcc.service.PhysicalPersonService;
 
-@CrossOrigin ( origins = "http//localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping ( { "/account" } )
+@RequestMapping ( { "${app.version}" + "/account" } )
 public class AccountController 
 {
 	@Autowired  

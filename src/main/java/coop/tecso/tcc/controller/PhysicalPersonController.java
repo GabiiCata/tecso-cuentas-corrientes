@@ -21,9 +21,9 @@ import coop.tecso.tcc.model.PhysicalPerson;
 import coop.tecso.tcc.service.LegalPersonService;
 import coop.tecso.tcc.service.PhysicalPersonService;
  
-@CrossOrigin ( origins = "http//localhost:4200", maxAge = 3600)
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping ( { "/persona-fisica" } )
+@RequestMapping ( { "${app.version}" + "/persona-fisica" } )
 public class PhysicalPersonController 
 {
 	@Autowired  

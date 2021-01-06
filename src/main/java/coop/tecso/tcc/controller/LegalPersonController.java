@@ -22,10 +22,10 @@ import coop.tecso.tcc.service.PhysicalPersonService;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping ( { "/persona-juridica" } )
+@RequestMapping ( { "${app.version}" + "/persona-juridica" } )
 public class LegalPersonController 
 {
-	@Autowired  
+	@Autowired  	
 	LegalPersonService service;
 	
 	@Autowired  
