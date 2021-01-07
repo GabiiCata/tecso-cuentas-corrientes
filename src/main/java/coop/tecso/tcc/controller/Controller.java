@@ -8,12 +8,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping ({"/"})
+
 public class Controller {
 	
+	private static final  String RESPONSE = "<h1>Feliz 2021!</h1>.<hr> <h3>El servidor funciona correctamente :) </h3>" ; 
+	
+	@RequestMapping ({"/"})
 	@GetMapping
-	public String list()
+	public String blankPage()
 	{
-		return "<h1>Feliz 2021!</h1>.<hr> <h3>El servidor funciona correctamente :) </h3>";
+		return RESPONSE;
+	}
+	
+	@RequestMapping ({ "${app.version}" } )
+	@GetMapping
+	public String blankPageVersion()
+	{
+		return RESPONSE;
 	}
 }
