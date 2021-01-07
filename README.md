@@ -9,8 +9,9 @@ REST API para realizar abm de Personas Fisicas, Jurídicas, Cuentas Corrientes y
 ## Web activa en Firebase
 
     https://tecso-cuentas-corrientes.web.app/
-
-
+## Repositorio de pagina web realizada en Angular 
+    https://github.com/GabiiCata/tecso-cuentas-corrientes-frontend
+    
 ## REST API
 
 Los endpoints para cada petición están detallados en las siguientes tablas, y con ejemplos en su respectivo hipervinculo.
