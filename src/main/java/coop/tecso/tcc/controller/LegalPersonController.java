@@ -73,7 +73,8 @@ public class LegalPersonController
 	{
 		return service.listId(id);
 	}
-	
+
+
 	@PutMapping(path = {"/{id}"})
 	public LegalPerson edit( @RequestBody LegalPerson person, @PathVariable("id") int id  )
 	{

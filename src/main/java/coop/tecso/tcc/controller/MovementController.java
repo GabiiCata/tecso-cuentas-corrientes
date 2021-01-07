@@ -1,5 +1,6 @@
 package coop.tecso.tcc.controller;
 
+ import java.sql.Date;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +67,8 @@ public class MovementController
 	@PostMapping
 	public Object add (@RequestBody Movement movement)
 	{
+		long millis=System.currentTimeMillis();  
+ 		movement.setDate( new Date( millis  ) );
 		if ( isValidAmount ( movement ) )
 		{
 			Account originAccount = accountService.listByAccountNumber( movement.getOriginAccountNumber() );

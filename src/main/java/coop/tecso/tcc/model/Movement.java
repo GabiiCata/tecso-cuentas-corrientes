@@ -1,5 +1,9 @@
 package coop.tecso.tcc.model;
 
+ 
+ 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,7 +27,7 @@ public class Movement {
 	private  int id;
 	
 	@Column
-	private String date;
+	private Date date;
 	
 	@Column
 	private String movementType;
